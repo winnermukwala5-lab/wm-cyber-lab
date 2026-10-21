@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes — WM CYBER LAB</title>
+  <meta name="description" content="Notes et articles de WM CYBER LAB">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">WM CYBER LAB</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="../pages/projects.html" class="nav-link">Projets</a>
+        <a href="index.html" class="nav-link active">Notes</a>
+        <a href="../pages/about.html" class="nav-link">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 style="margin-bottom: 2rem;">Notes</h1>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-tag">Note</span>
+            <h3><a href="exemple-article.html">Exemple d'article</a></h3>
+            <p>Petit exemple pour montrer comment structurer une note technique.</p>
+            <time datetime="2026-10-21">21 oct. 2026</time>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

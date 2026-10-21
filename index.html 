@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WM CYBER LAB</title>
+  <meta name="description" content="Laboratoire cyber minimaliste - notes, projets et outils.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">WM CYBER LAB</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="pages/projects.html" class="nav-link">Projets</a>
+        <a href="posts/index.html" class="nav-link">Notes</a>
+        <a href="pages/about.html" class="nav-link">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>WM CYBER LAB</h1>
+        <p class="hero-subtitle">Laboratoire minimaliste de cybersécurité, outils et notes techniques.</p>
+        <div class="hero-actions">
+          <a href="posts/index.html" class="btn btn-primary">Voir les notes</a>
+          <a href="pages/projects.html" class="btn btn-outline">Projets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dernières notes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dernières notes</h2>
+          <a href="posts/index.html" class="link">Tout voir →</a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-tag">Note</span>
+            <h3><a href="posts/exemple-article.html">Exemple d'article</a></h3>
+            <p>Petit aperçu de ce que tu pourras écrire ici (techniques, retours d’expérience, outils…).</p>
+            <time datetime="2026-10-21">21 oct. 2026</time>
+          </article>
+          <article class="card">
+            <span class="card-tag">Note</span>
+            <h3><a href="#">À venir</a></h3>
+            <p>Tu pourras ajouter d’autres notes facilement en copiant un fichier.</p>
+            <time datetime="2026-10-21">À venir</time>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projets</h2>
+          <a href="pages/projects.html" class="link">Tous les projets →</a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-tag">Projet</span>
+            <h3><a href="pages/projects.html">WM CYBER LAB</a></h3>
+            <p>Ce site lui-même. Site statique minimaliste hébergé sur GitHub Pages.</p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Projet</span>
+            <h3><a href="#">Prochain projet</a></h3>
+            <p>Espace réservé pour tes futurs outils ou expériences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos court -->
+    <section class="section">
+      <div class="container about-preview">
+        <h2>À propos</h2>
+        <p>WM CYBER LAB est un espace personnel pour documenter, tester et partager des connaissances en cybersécurité et tech, de façon simple et claire.</p>
+        <a href="pages/about.html" class="btn btn-outline">En savoir plus</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

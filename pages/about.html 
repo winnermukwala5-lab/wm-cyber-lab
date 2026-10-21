@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — WM CYBER LAB</title>
+  <meta name="description" content="À propos de WM CYBER LAB">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">WM CYBER LAB</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link">Projets</a>
+        <a href="../posts/index.html" class="nav-link">Notes</a>
+        <a href="about.html" class="nav-link active">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width: 640px;">
+        <h1 style="margin-bottom: 1.5rem;">À propos</h1>
+        
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+          WM CYBER LAB est un espace personnel dédié à la cybersécurité, aux outils techniques et aux notes de travail.
+        </p>
+        
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+          L’objectif est simple : documenter clairement ce que j’apprends et ce que je construis, sans superflu.
+        </p>
+
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+          Le site est volontairement minimaliste, performant et hébergé sur GitHub Pages.  
+          Les mises à jour se font manuellement.
+        </p>
+
+        <a href="../index.html" class="btn btn-outline">← Retour à l’accueil</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

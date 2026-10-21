@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple d'article — WM CYBER LAB</title>
+  <meta name="description" content="Exemple d'article technique">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">WM CYBER LAB</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="../pages/projects.html" class="nav-link">Projets</a>
+        <a href="index.html" class="nav-link active">Notes</a>
+        <a href="../pages/about.html" class="nav-link">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width: 680px;">
+        <a href="index.html" class="link" style="display: inline-block; margin-bottom: 1.5rem;">← Toutes les notes</a>
+        
+        <h1 style="margin-bottom: 0.5rem;">Exemple d'article</h1>
+        <time datetime="2026-10-21" style="color: var(--text-muted); font-size: 0.9rem;">21 octobre 2026</time>
+
+        <div style="margin-top: 2rem; color: var(--text-muted);">
+          <p style="margin-bottom: 1.25rem;">
+            Ceci est un exemple d’article. Tu peux le modifier ou le supprimer plus tard.
+          </p>
+
+          <p style="margin-bottom: 1.25rem;">
+            Pour ajouter une nouvelle note, il suffit de copier ce fichier, de le renommer, et de modifier le contenu.
+          </p>
+
+          <h2 style="color: var(--text); margin: 2rem 0 1rem; font-size: 1.25rem;">Comment ajouter une note</h2>
+          
+          <ol style="padding-left: 1.25rem; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.5rem;">Copie le fichier <code>exemple-article.html</code></li>
+            <li style="margin-bottom: 0.5rem;">Renomme-le (ex: <code>ma-nouvelle-note.html</code>)</li>
+            <li style="margin-bottom: 0.5rem;">Modifie le titre et le contenu</li>
+            <li style="margin-bottom: 0.5rem;">Ajoute un lien vers cette note dans <code>posts/index.html</code></li>
+          </ol>
+
+          <p>
+            C’est tout. Simple, manuel, et efficace.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

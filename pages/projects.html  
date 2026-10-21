@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — WM CYBER LAB</title>
+  <meta name="description" content="Projets de WM CYBER LAB">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">WM CYBER LAB</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link active">Projets</a>
+        <a href="../posts/index.html" class="nav-link">Notes</a>
+        <a href="about.html" class="nav-link">À propos</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 style="margin-bottom: 2rem;">Projets</h1>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-tag">Site</span>
+            <h3>WM CYBER LAB</h3>
+            <p>Ce site lui-même. Site statique minimaliste, performant et hébergé sur GitHub Pages.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">À venir</span>
+            <h3>Prochain projet</h3>
+            <p>Espace réservé. Tu pourras ajouter ici tes futurs outils, scripts ou expériences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html> 
+
