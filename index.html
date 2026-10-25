@@ -2,108 +2,118 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WM CYBER LAB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07110d">
+<meta name="description" content="WM CYBER LAB : apprentissage de la cybersécurité éthique, des réseaux et de la programmation.">
+<title>WM CYBER LAB | Laboratoire numérique</title>
 <link rel="stylesheet" href="style.css">
 <style>
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  padding: 24px;
-}
-.card {
-  width: 100%;
-  max-width: 430px;
-  padding: 26px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: linear-gradient(145deg, var(--surface), var(--bg));
-  box-shadow: 0 0 35px rgba(0, 255, 157, 0.08);
-}
-.card h2 {
-  text-align: center;
-  color: var(--accent);
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-.card input,
-.card button {
-  width: 100%;
-  padding: 14px;
-  margin-top: 12px;
-  border-radius: 9px;
-  font-size: 16px;
-}
-.card input {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--text);
-}
-.card input:focus {
-  outline: 1px solid var(--accent);
-  border-color: var(--accent);
-}
-.card button {
-  background: var(--accent);
-  color: #04120a;
-  border: 0;
-  font-weight: 800;
-  cursor: pointer;
-}
-.card button:hover {
-  box-shadow: 0 0 22px rgba(0, 255, 157, 0.2);
-}
-.card .result {
-  margin-top: 25px;
-  padding: 18px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  text-align: center;
-  background: var(--bg-alt);
-}
-.card .status {
-  color: var(--accent);
-  font-weight: 800;
-  font-size: 20px;
-}
-.card small {
-  color: var(--text-muted);
-}
-.card .logo {
-  margin: 0 auto 18px;
-}
-@media (max-width: 480px) {
-  body {
-    padding: 14px;
-  }
-  .card {
-    padding: 20px;
-  }
-}
+body{display:block;padding:0}
+header{padding:18px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;border-bottom:1px solid var(--border)}
+.brand{color:var(--accent);font-weight:900;letter-spacing:1px;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:14px}
+nav a{color:var(--text-muted);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--accent)}
+.hero,.section{max-width:1000px;margin:auto;padding:55px 20px}
+.tag{color:var(--accent);font-size:12px;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(38px,8vw,62px);line-height:1.1;margin:18px 0}
+h1 span{color:var(--accent)}
+.intro{color:var(--text-muted);line-height:1.8;max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.action{display:inline-block;padding:13px 17px;border:1px solid var(--accent);border-radius:8px;text-decoration:none;font-weight:bold}
+.primary{background:var(--accent);color:#04120a}
+.secondary{color:var(--accent)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.feature{padding:22px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.feature h3{color:var(--accent)}
+.feature p{color:var(--text-muted);line-height:1.7}
+.simulator{max-width:430px;padding:22px;margin:20px 0;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.simulator input,.simulator button{box-sizing:border-box;width:100%;padding:13px;margin-top:12px;border-radius:8px;font-size:16px}
+.simulator input{background:var(--bg);border:1px solid var(--border);color:var(--text)}
+.simulator button{background:var(--accent);color:#04120a;border:0;font-weight:bold}
+footer{text-align:center;padding:25px;border-top:1px solid var(--border);color:var(--text-muted);font-size:13px}
 </style>
 </head>
 <body>
-<div class="card">
-<img src="images/logo.jpeg" alt="Logo WM CYBER LAB" class="logo">
-<h2>⚖️ WM CYBER LAB</h2>
-<p style="text-align:center">SIMULATEUR DE STATUT</p>
-<input id="numero" type="tel" placeholder="Ex. +509 32 39 2290">
-<button onclick="verifier()">VÉRIFIER LA SIMULATION</button>
-<div class="result">
-<p>📱 STATUT DU NUMÉRO</p>
-<div id="statut" class="status">EN ATTENTE</div>
+<header>
+<a class="brand" href="#accueil">WM CYBER LAB</a>
+<nav aria-label="Navigation principale">
+<a href="#accueil">Accueil</a>
+<a href="#domaines">Domaines</a>
+<a href="#simulateur">Démo</a>
+<a href="#apropos">À propos</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+<p class="tag">LABORATOIRE NUMÉRIQUE • ÉDUCATIF</p>
+<h1>Apprends.<br>Teste.<br><span>Protège.</span></h1>
+<p class="intro">Bienvenue sur WM CYBER LAB, un espace pour découvrir la cybersécurité éthique, comprendre les réseaux informatiques et développer tes compétences numériques étape par étape.</p>
+<div class="actions">
+<a class="action primary" href="#domaines">Explorer les domaines</a>
+<a class="action secondary" href="#simulateur">Tester la démo</a>
+</div>
+</section>
+
+<section class="section" id="domaines">
+<p class="tag">EXPLORER • APPRENDRE • CRÉER</p>
+<h2>Les domaines du laboratoire</h2>
+<p class="intro">Des bases solides pour progresser dans le monde informatique.</p>
+<div class="features">
+<article class="feature">
+<h3>01 / Cybersécurité</h3>
+<p>Découvre les bonnes pratiques, les menaces numériques et les principes de sécurité dans un cadre légal.</p>
+</article>
+<article class="feature">
+<h3>02 / Réseaux & systèmes</h3>
+<p>Comprends les adresses IP, les réseaux, les systèmes d'exploitation et le fonctionnement d'Internet.</p>
+</article>
+<article class="feature">
+<h3>03 / Projets informatiques</h3>
+<p>Apprends à créer des pages web, programmer et transformer tes idées en projets concrets.</p>
+</article>
+</div>
+</section>
+
+<section class="section" id="simulateur">
+<p class="tag">DÉMONSTRATION INTERACTIVE</p>
+<h2>Simulateur de statut</h2>
+<p class="intro">Cette démo montre comment fonctionne un formulaire HTML. Elle ne vérifie aucun compte ni aucun bannissement réel.</p>
+<div class="simulator">
+<h3>Test de formulaire</h3>
+<label for="numero">Numéro de démonstration</label>
+<input id="numero" type="tel" placeholder="Ex. +241 00 00 00 00">
+<button type="button" onclick="verifier()">LANCER LA DÉMO</button>
+<div aria-live="polite">
+<p id="statut">EN ATTENTE</p>
 <p id="message">Entre un numéro pour commencer.</p>
 </div>
-<p style="text-align:center"><small>Démo éducative — aucun bannissement réel.</small></p>
+<small>Démo éducative — aucune vérification réelle.</small>
 </div>
+</section>
+
+<section class="section" id="apropos">
+<p class="tag">À PROPOS DU PROJET</p>
+<h2>La technologie, par la pratique.</h2>
+<p class="intro">WM CYBER LAB est un projet d'apprentissage consacré au numérique, à la programmation et à la cybersécurité éthique. Son objectif : apprendre progressivement, créer et partager.</p>
+</section>
+</main>
+
+<footer>
+<p>© 2026 WM CYBER LAB — Projet éducatif.</p>
+<p>Apprendre la technologie de manière responsable.</p>
+</footer>
+
 <script>
 function verifier(){
 const numero=document.getElementById('numero').value.trim();
-if(!numero){alert('Entre un numéro.');return;}
+if(!numero){
+document.getElementById('message').textContent='Entre un numéro pour lancer la démonstration.';
+return;
+}
 document.getElementById('statut').textContent='SIMULATION';
-document.getElementById('message').textContent=
-'Numéro saisi : '+numero+'. Statut réel non vérifié.';
+document.getElementById('message').textContent='Numéro saisi : '+numero+'. Statut réel non vérifié.';
 }
 </script>
 </body>
