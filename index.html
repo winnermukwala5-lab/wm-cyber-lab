@@ -1,106 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WM CYBER LAB</title>
-  <meta name="description" content="Laboratoire cyber minimaliste - notes, projets et outils.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WM CYBER LAB</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101010;color:white;font-family:Arial,sans-serif;display:grid;place-items:center;min-height:100vh;padding:20px}
+.card{width:100%;max-width:380px;padding:25px;border:1px solid #777;border-radius:18px;background:linear-gradient(145deg,#242424,#080808);box-shadow:0 0 25px #000}
+h2{text-align:center;color:#d4b36a;font-size:22px}
+input,button{width:100%;padding:14px;margin-top:12px;border-radius:9px;font-size:16px}
+input{background:#191919;border:1px solid #555;color:white}
+button{background:#b99b5b;color:#111;border:0;font-weight:bold}
+.result{margin-top:25px;padding:18px;border:1px solid #555;border-radius:12px;text-align:center}
+.status{color:#e6b95c;font-weight:bold;font-size:20px}
+small{color:#aaa}
+
+.logo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    border: 2px solid #d4b36a;
+    box-shadow: 0 0 18px #d4b36a55;
+}
+</style>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">WM CYBER LAB</a>
-      <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link active">Accueil</a>
-        <a href="pages/projects.html" class="nav-link">Projets</a>
-        <a href="posts/index.html" class="nav-link">Notes</a>
-        <a href="pages/about.html" class="nav-link">À propos</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <h1>WM CYBER LAB</h1>
-        <p class="hero-subtitle">Laboratoire minimaliste de cybersécurité, outils et notes techniques.</p>
-        <div class="hero-actions">
-          <a href="posts/index.html" class="btn btn-primary">Voir les notes</a>
-          <a href="pages/projects.html" class="btn btn-outline">Projets</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Dernières notes -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Dernières notes</h2>
-          <a href="posts/index.html" class="link">Tout voir →</a>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <span class="card-tag">Note</span>
-            <h3><a href="posts/exemple-article.html">Exemple d'article</a></h3>
-            <p>Petit aperçu de ce que tu pourras écrire ici (techniques, retours d’expérience, outils…).</p>
-            <time datetime="2026-10-21">21 oct. 2026</time>
-          </article>
-          <article class="card">
-            <span class="card-tag">Note</span>
-            <h3><a href="#">À venir</a></h3>
-            <p>Tu pourras ajouter d’autres notes facilement en copiant un fichier.</p>
-            <time datetime="2026-10-21">À venir</time>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projets -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Projets</h2>
-          <a href="pages/projects.html" class="link">Tous les projets →</a>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <span class="card-tag">Projet</span>
-            <h3><a href="pages/projects.html">WM CYBER LAB</a></h3>
-            <p>Ce site lui-même. Site statique minimaliste hébergé sur GitHub Pages.</p>
-          </article>
-          <article class="card">
-            <span class="card-tag">Projet</span>
-            <h3><a href="#">Prochain projet</a></h3>
-            <p>Espace réservé pour tes futurs outils ou expériences.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- À propos court -->
-    <section class="section">
-      <div class="container about-preview">
-        <h2>À propos</h2>
-        <p>WM CYBER LAB est un espace personnel pour documenter, tester et partager des connaissances en cybersécurité et tech, de façon simple et claire.</p>
-        <a href="pages/about.html" class="btn btn-outline">En savoir plus</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 WM CYBER LAB — Construit avec HTML / CSS / JS</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<div class="card">
+<img src="images/logo.jpeg" alt="Logo WM CYBER LAB" class="logo">
+<h2>⚖️ WM CYBER LAB</h2>
+<p style="text-align:center">SIMULATEUR DE STATUT</p>
+<input id="numero" type="tel" placeholder="Ex. +509 32 39 2290">
+<button onclick="verifier()">VÉRIFIER LA SIMULATION</button>
+<div class="result">
+<p>📱 STATUT DU NUMÉRO</p>
+<div id="statut" class="status">EN ATTENTE</div>
+<p id="message">Entre un numéro pour commencer.</p>
+</div>
+<p style="text-align:center"><small>Démo éducative — aucun bannissement réel.</small></p>
+</div>
+<script>
+function verifier(){
+const numero=document.getElementById('numero').value.trim();
+if(!numero){alert('Entre un numéro.');return;}
+document.getElementById('statut').textContent='SIMULATION';
+document.getElementById('message').textContent=
+'Numéro saisi : '+numero+'. Statut réel non vérifié.';
+}
+</script>
 </body>
 </html>
-
